@@ -1,0 +1,28 @@
+.moon {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.2);
+  transform: rotateZ(-60deg);
+}
+.tilted{
+     transform: rotateZ(60deg);
+}
+
+.moonShape {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.moon:hover>.moonShape{
+     background-color: white;
+}
+ .moon:hover>.moontxt{
+     color: white;
+ }
