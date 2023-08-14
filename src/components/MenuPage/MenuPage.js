@@ -2,6 +2,10 @@ import "./menupage.css";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { MyContext } from "../../App";
+import Img from '../../assets/acquaSection.jpg'
+import LuceImg from '../../assets/luceSectionImage.jpg'
+import RoofImg from '../../assets/rooftopSectionImage.jpg'
+import HotelImg from '../../assets/hotelSectionImage.webp'
 
 const MenuPage = () => {
   const {showMenu,setShowMenu} = useContext(MyContext);
@@ -17,6 +21,7 @@ const MenuPage = () => {
           }}
         >
           LUCE <span className='desc'>2ND FLOOR</span>
+          <img src={LuceImg} alt='snapshot' className='linkImage' />
         </li>
         <li
           className='menuPageLink'
@@ -26,6 +31,7 @@ const MenuPage = () => {
           }}
         >
           ACQUA<span className='desc'>GROUND FLOOR</span>
+          <img src={Img} alt='snapshot' className='linkImage' />
         </li>
         <li
           className='menuPageLink'
@@ -35,6 +41,7 @@ const MenuPage = () => {
           }}
         >
           ROOFTOP<span className='desc'>TOP FLOOR</span>
+          <img src={RoofImg} alt='snapshot' className='linkImage' />
         </li>
         <li
           className='menuPageLink'
@@ -44,6 +51,7 @@ const MenuPage = () => {
           }}
         >
           HOTEL<span className='desc'>3RD FLOOR</span>
+          <img src={HotelImg} alt='snapshot' className='linkImage' />
         </li>
       </ul>
       <div className='menuPageFooter'>

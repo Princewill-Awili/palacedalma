@@ -1,56 +1,99 @@
-.menuPage{
-     width: 100%;
-     height: 80vh;
-     position:absolute;
-     top: 20vh;
-     background-color: var(--pageGrey);
-     color: var(--menuFontBlack);
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     padding-left: 2%;
-     
+.menuPage {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 20vh;
+  background-color: var(--pageGrey);
+  color: var(--menuFontBlack);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 2%;
 }
 
-.menuPageList{
-     list-style-type: none;
-     display: flex;
-     flex-direction: column;
-     gap: 15px;
+.menuPageList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.menuPageLink{
-     font-size: 2.5em;
-     display: flex;
-     align-items: top;
-     position: relative;
-     cursor: pointer;
+.menuPageLink {
+  font-size: 2.5em;
+  display: flex;
+  align-items: top;
+  position: relative;
+  cursor: pointer;
 }
-.desc{
-     font-size: 0.3em;
-     display: none;
-     transition: all ease-in 2s;
-}
-
-.menuPageLink:hover> .desc{
-     display: flex;
-     
+.desc {
+  font-size: 0.3em;
+  display: none;
+  transition: all ease-in 2s;
 }
 
-
-
-
-.menuPageFooter{
-     display: flex;
-     flex-direction: column;
-     margin-bottom: 3vh;
+.menuPageLink:hover > .desc {
+  display: flex;
 }
 
-.tier{
-     font-size: 0.9em;
+.linkImage {
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  display: none;
+  transition: display ease 0.5s;
+  animation: imageFloat 4s ease-in-out infinite;
+  z-index: 9999;
 }
 
-.smallFooterTxt{
-     font-size: 0.8em;
-     font-weight: 600;
+.menuPageLink:hover > .linkImage {
+  display: flex;
+}
+
+.menuPageFooter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+
+.tier {
+  font-size: 0.9em;
+}
+
+.smallFooterTxt {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+@keyframes imageFloat {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+@media screen and (max-width:875px) {
+     .linkImage{
+          width:45%;
+          left: 40%;
+     }
+}
+
+@media screen and (max-width:665px) {
+     .linkImage{
+          width:40%;
+          left: 40%;
+     }
+}
+@media screen and (max-width:650px) {
+     .linkImage{
+          width: 50%;
+          top:15px
+
+     }
 }

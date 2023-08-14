@@ -12,7 +12,7 @@ export const MyContext = createContext();
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
-  const [mode, setMode] = useState("acqua");
+  const [mode, setMode] = useState("home");
 
   return (
     <div className='App'>
