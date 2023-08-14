@@ -37,3 +37,43 @@
   }
   
  }
+
+  @media screen and (max-width:1000px) {
+   .moontxt{
+    font-size: 0.9em;
+  }
+
+  .moonShape{
+    width: 40px;
+    height: 40px;
+  }
+  
+ }
+
+   @media screen and (max-width:800px) {
+   .moontxt{
+    font-size: 0.8em;
+  }
+
+  .moonShape{
+    width: 30px;
+    height: 30px;
+  }
+  
+ }
+
+ @media screen and (max-width:660px) {
+    .moon{
+      flex-direction: row;
+    }
+ }
+
+ @media screen and (max-width:465px){
+     .moonTxt{
+          font-size:0.7em;
+     }
+     .moonShape{
+      width: 25px;
+      height: 25px;
+     }
+}

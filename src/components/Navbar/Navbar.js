@@ -1,17 +1,18 @@
-import React, {useState} from 'react'
+import {useContext} from 'react'
+import { MyContext } from '../../App';
 import './navbar.css'
 import { HiOutlineMenuAlt4 as MenuIcon } from "react-icons/hi";
 import MenuPage from '../MenuPage/MenuPage';
 
 const Navbar = () => {
-     const [showMenu, setShowMenu] = useState(false);
+     const {setMode,showMenu, setShowMenu} = useContext(MyContext);
 
      const toggleMenu = () =>{
           setShowMenu(!showMenu)
      }
   return (
     <div className={showMenu ? 'navbar menuOpen': 'navbar'} >
-      <h3 className='logo'>Palace D' Alma</h3>
+      <h3 className='logo' onClick={()=>setMode('home')}>Palace D' Alma</h3>
       <div className='menuContainer'>
         <p className='region'>NG</p>
         <div className={showMenu ? 'menu menuBorder' : 'menu'}>

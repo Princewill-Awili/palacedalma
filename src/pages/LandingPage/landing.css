@@ -4,12 +4,26 @@
      align-items: center;
      justify-content: center;
      display: flex;
-     background-image: url("/src/assets/facade.jpg");
      background-size: cover;
      background-position: center;
      background-repeat:no-repeat ;
-     overflow: hidden;
-     
+     overflow: hidden; 
+}
+
+.homePage{
+     background-image: url("/src/assets/facade.jpg");
+}
+.acquaPage{
+     background-image: url("/src/assets/pool.png");
+}
+.rooftopPage{
+     background-image: url('/src/assets/rooftop.jpg');
+}
+.lucePage{
+     background-image: url('/src/assets/luce.jpg');
+}
+.hotelPage{
+     background-image: url('/src/assets/hotel.webp');
 }
 
 .mainArea{
@@ -89,4 +103,17 @@
           margin-top: 5%;
           width: 100%;
      }
+}
+
+@media screen and (max-width:705px){
+     .moonHolder{
+          margin-top: -7vh;
+     }
+}
+
+@media screen and (max-width:465px){
+     .moonHolder{
+          margin-top: -6vh;
+     }
+     
 }
