@@ -8,6 +8,7 @@
   justify-content: center;
   color: rgba(255, 255, 255, 0.2);
   transform: rotateZ(-60deg);
+  z-index: 2000;
 }
 .tilted{
      transform: rotateZ(60deg);
@@ -25,4 +26,14 @@
 }
  .moon:hover>.moontxt{
      color: white;
+ }
+
+
+ @media screen and (max-width:1120px) {
+  .moon{
+    flex-direction: column;
+    transform: rotateZ(0deg);
+    z-index: 10000;
+  }
+  
  }

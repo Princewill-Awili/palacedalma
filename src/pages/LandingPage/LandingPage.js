@@ -1,10 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './landing.css'
 import LinkList from '../../components/LinkList/LinkList';
 import Moon from '../../components/Moon/Moon';
 
 const LandingPage = () => {
-  const[mode, setMode] = useState('')
   return (
     <div className='landingPage'>
       <div className='mainArea'>

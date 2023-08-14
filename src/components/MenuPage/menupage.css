@@ -1,0 +1,51 @@
+.menuPage{
+     width: 100%;
+     height: 80vh;
+     position:absolute;
+     top: 20vh;
+     background-color: var(--pageGrey);
+     color: var(--menuFontBlack);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding-left: 2%;
+     
+}
+
+.menuPageList{
+     list-style-type: none;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+
+.menuPageLink{
+     font-size: 2.5em;
+     display: flex;
+     align-items: top;
+     position: relative;
+     cursor: pointer;
+}
+.desc{
+     font-size: 0.3em;
+     display: none;
+     transition: all ease-in 2s;
+}
+
+.menuPageLink:hover> .desc{
+     display: flex;
+     
+}
+
+
+
+
+.menuPageFooter{
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 3vh;
+}
+
+.tier{
+     font-size: 0.9em;
+}

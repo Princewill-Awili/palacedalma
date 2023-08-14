@@ -7,6 +7,12 @@
      top: 0vh;
      color: white;
      justify-content: space-between;
+     z-index: 9999;
+}
+
+.menuOpen{
+     background-color: var(--pageGrey);
+     color: black;
 }
 
 .logo{
@@ -14,10 +20,13 @@
      font-size: 2em;
      margin-left: 1%;
      font-weight: 500;
+     cursor: pointer;
+     min-width: 5%;
 }
 
 .menuContainer{
      width: 10%;
+     min-width: 10%;
      height: 25%;
      display: flex;
      align-items: center;
@@ -28,6 +37,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     cursor: pointer;
 }
 
 .menu{
@@ -37,4 +47,39 @@
      align-items: center;
      justify-content: space-evenly;
      border-left: 1px solid white;
+     cursor: pointer;
+}
+
+.menuBorder{
+     border-left: 1px solid var(--menuFontBlack);
+}
+
+
+@media screen and (max-width:1120px) {
+     .menuContainer{
+          width: 15%;
+     }
+}
+
+@media screen and (max-width:820px) {
+     .menuContainer{
+          width: 20%;
+     }
+}
+
+@media screen and (max-width:600px) {
+   
+     .menuContainer{
+          width: 25%;
+          font-size: 0.7em;
+     }
+}
+
+@media screen and (max-width:450px) {
+     .menuContainer{
+          width: 25%;
+     }
+     .MenuTxt{
+          font-size: 0.9em;
+     }
 }

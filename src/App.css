@@ -12,3 +12,8 @@
     color: inherit;
     text-decoration: none;
  }
+
+ :root{
+    --pageGrey: #E9E6E2;
+    --menuFontBlack: #465957;
+ }
