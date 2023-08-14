@@ -49,3 +49,8 @@
 .tier{
      font-size: 0.9em;
 }
+
+.smallFooterTxt{
+     font-size: 0.8em;
+     font-weight: 600;
+}

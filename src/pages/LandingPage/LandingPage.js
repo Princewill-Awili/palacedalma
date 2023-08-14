@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { MyContext } from "../../App";
+import { useNavigate } from "react-router-dom";
 import "./landing.css";
 import LinkList from "../../components/LinkList/LinkList";
 import Moon from "../../components/Moon/Moon";
@@ -26,7 +27,7 @@ const LandingPage = () => {
     } else if (mode === "rooftop") {
       return "Rooftop";
     } else if (mode === "luce") {
-      return "Luce/Restaurant";
+      return "Luce";
     } else if (mode === "hotel") {
       return "Hotel";
     }
@@ -34,6 +35,11 @@ const LandingPage = () => {
   };
 
   const myMode = handleModes();
+  const navigate = useNavigate();
+
+  const handleRoutes = (modeText) =>{
+    navigate(`/${modeText}`)
+  }
 
   return (
     <div className={myMode}>
@@ -63,7 +69,7 @@ const LandingPage = () => {
             ]}
           />
         </div>
-        <p className='experience'>START THE EXPERIENCE</p>
+        <p className='experience' onClick={()=> handleRoutes(mode)}>START THE EXPERIENCE</p>
       </div>
     </div>
   );

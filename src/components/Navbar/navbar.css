@@ -70,14 +70,14 @@
 @media screen and (max-width:600px) {
    
      .menuContainer{
-          width: 25%;
+          width: 30%;
           font-size: 0.7em;
      }
 }
 
 @media screen and (max-width:450px) {
      .menuContainer{
-          width: 25%;
+          width: 35%;
      }
      .MenuTxt{
           font-size: 0.9em;
