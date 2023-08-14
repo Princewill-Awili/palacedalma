@@ -14,8 +14,8 @@ const LandingPage = () => {
       return "landingPage rooftopPage";
     } else if (mode === "luce") {
       return "landingPage lucePage";
-    }else if(mode === 'hotel'){
-      return "landingPage hotelPage"
+    } else if (mode === "hotel") {
+      return "landingPage hotelPage";
     }
     return "landingPage homePage";
   };
@@ -27,8 +27,8 @@ const LandingPage = () => {
       return "Rooftop";
     } else if (mode === "luce") {
       return "Luce/Restaurant";
-    }else if(mode ==='hotel'){
-      return 'Hotel'
+    } else if (mode === "hotel") {
+      return "Hotel";
     }
     return "Palace D' Alma";
   };
@@ -63,6 +63,7 @@ const LandingPage = () => {
             ]}
           />
         </div>
+        <p className='experience'>START THE EXPERIENCE</p>
       </div>
     </div>
   );

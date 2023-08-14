@@ -1,7 +1,9 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import LandingPage from "./pages/LandingPage/LandingPage";
+import Acqua from "./pages/Acqua/Acqua";
 import { useState, createContext } from "react";
+import { Route,Routes } from "react-router-dom";
 
 export const MyContext = createContext();
 
@@ -11,9 +13,12 @@ function App() {
 
   return (
     <div className='App'>
-      <MyContext.Provider value={{showMenu, setShowMenu, mode, setMode}}>
+      <MyContext.Provider value={{ showMenu, setShowMenu, mode, setMode }}>
         <Navbar />
-        <LandingPage />
+        <Routes>
+          <Route exact path='/' element={<LandingPage />} />
+          <Route exact path='/acqua' element={<Acqua />} />
+        </Routes>
       </MyContext.Provider>
     </div>
   );
