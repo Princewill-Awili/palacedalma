@@ -1,0 +1,25 @@
+.linklist{
+     width: 20%;
+     height: 15%;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     list-style-type: none;
+}
+.linklistTitle{
+     width: 100%;
+     height: 20px;
+     margin-bottom: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.linklistItem{
+     width: 100%;
+     height: 20px;
+     font-size: 0.9em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 5px;
+}
