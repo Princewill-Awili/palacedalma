@@ -6,7 +6,7 @@ import LinkList from "../../components/LinkList/LinkList";
 import Moon from "../../components/Moon/Moon";
 
 const LandingPage = () => {
-  const { showMenu, mode } = useContext(MyContext);
+  const { showMenu,setShowMenu, mode } = useContext(MyContext);
 
   const handleModes = () => {
     if (mode === "acqua") {
@@ -38,6 +38,9 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const handleRoutes = (modeText) =>{
+    if(modeText === 'home'){
+      setShowMenu(!showMenu);
+    }
     navigate(`/${modeText}`)
   }
 
