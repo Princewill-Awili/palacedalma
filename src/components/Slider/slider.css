@@ -1,0 +1,32 @@
+.slider {
+  width: 100%;
+  height: 80vh;
+  margin-top: 20vh;
+  display:flex;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-direction: row;
+  
+}
+
+.imgHolder {
+  width: 300vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  animation: slideShow 30s infinite linear;
+  
+}
+
+
+
+@keyframes slideShow {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(-300vw);
+  }
+}
