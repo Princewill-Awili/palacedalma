@@ -16,7 +16,9 @@ const Navbar = () => {
 
      const goHome = () => {
       setMode('home');
-      setShowMenu(!showMenu);
+      if(showMenu){
+        setShowMenu(!showMenu);
+      }
       navigate('/');
      }
 
