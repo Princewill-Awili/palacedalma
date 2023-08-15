@@ -1,0 +1,94 @@
+.textcontent{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:flex-start;
+     position: absolute;
+     background-color: rgba(0,0,0,0.5);
+     color: white;
+     gap:5vh;
+     padding-top: 30vh;
+}
+
+.tcHeader{
+     font-size: 4em;
+     font-weight: lighter;
+     font-family: Satisfy;
+
+}
+
+.tcBody{
+     width: 50%;
+     text-align: center;
+     font-weight: 300;
+}
+
+.tcLinks{
+     display: flex;
+     width: 50%;
+     flex-direction: row;
+     height: fit-content;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;   
+}
+
+.tcLink{
+     width: fit-content;
+     height: 40px;
+     border: 1px solid white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 5px 10px;
+     border-radius:25px;
+     font-size:0.8em;
+     transition: background-color ease 0.5s;
+     cursor: pointer;
+}
+
+.tcLink:hover{
+     color: var(--menuFontBlack);
+     background-color: white;
+}
+
+
+.tcFooter{
+     font-size: 2.5em;
+     font-weight: 100;
+     font-family: Dancing Script;
+     border-bottom: 2px solid white;
+     margin-top: 5vh;
+}
+
+
+@media screen and (max-width:1120px) {
+     
+}
+
+@media screen and (max-width:770px) {
+     .tcHeader{
+          font-size: 3em;
+     }
+     .tcBody{
+          width: 70%;
+     }
+     .tcLinks{
+          width: 80%;
+     }
+}
+
+@media screen and (max-width:600px) {
+     .tcHeader{
+          font-size: 2.5em;
+     }
+     .tcBody{
+          font-size: 0.9em;
+          width: 80%;
+     }
+     .tcFooter{
+          margin-top: 3vh;
+     }
+}

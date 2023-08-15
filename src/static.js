@@ -1,0 +1,1 @@
+export const bodyTxt = "It's not just another gourmet cuisine. We dont just use \"recipes\" to cook. In Luce restaurant we follow the heart that loves tradition and our mind, which loves creativity. Sit at the table and smack your lips, we have prepared something good for you."
