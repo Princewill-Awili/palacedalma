@@ -59,14 +59,21 @@
      font-size: 2.5em;
      font-weight: 100;
      font-family: Dancing Script;
-     border-bottom: 2px solid white;
      margin-top: 5vh;
 }
 
-
-@media screen and (max-width:1120px) {
+.smallFooter{
+     margin-top: -5vh;
+     font-size: 0.7em;
+     font-weight: lighter;
      
+     width: 20%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
+
+
 
 @media screen and (max-width:770px) {
      .tcHeader{
@@ -76,6 +83,9 @@
           width: 70%;
      }
      .tcLinks{
+          width: 80%;
+     }
+     .smallFooter{
           width: 80%;
      }
 }
@@ -88,7 +98,16 @@
           font-size: 0.9em;
           width: 80%;
      }
+     .tcLinks{
+          font-size: 0.9em;
+     }
      .tcFooter{
           margin-top: 3vh;
+     }
+}
+
+@media screen and (max-width:480px) {
+     .tcLinks{
+          width: 100%;
      }
 }

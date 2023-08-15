@@ -11,6 +11,7 @@ const TextContent = ({header,body,links, footer}) => {
         ))}
       </div>
       <h3 className='tcFooter'>{footer}</h3>
+      <p className="smallFooter">PALACE D' ALMA</p>
     </div>
   );
 }

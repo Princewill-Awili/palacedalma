@@ -6,7 +6,7 @@ import { bodyTxt } from '../../static'
 const Luce = () => {
   return (
     <div className='luce'>
-      <Slider/>
+      <Slider luce/>
       <TextContent header={"A Perfect Dinner"} body={bodyTxt} links={['ASK FOR INFO','START THE EXPERIENCE']} footer={"Luce"}/>
     </div>
   )
