@@ -8,18 +8,20 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
      const navigate = useNavigate();
-     const {setMode,showMenu, setShowMenu} = useContext(MyContext);
+     const {setMode,showMenu, setShowMenu, setLoad} = useContext(MyContext);
 
      const toggleMenu = () =>{
           setShowMenu(!showMenu)
      }
 
      const goHome = () => {
-      setMode('home');
-      if(showMenu){
+      setLoad(true);
+      setMode("home");
+      if (showMenu) {
         setShowMenu(!showMenu);
       }
-      navigate('/');
+      navigate("/");
+      setTimeout(()=>{setLoad(false)},1000);
      }
 
   return (

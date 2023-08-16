@@ -1,47 +1,50 @@
-import './moon.css'
-import { MyContext } from '../../App';
-import { useContext } from 'react';
+import "./moon.css";
+import { MyContext } from "../../App";
+import { useContext } from "react";
 
+const Moon = ({ txt, inverted }) => {
+  const { mode, setMode, setLoad } = useContext(MyContext);
 
-const Moon = ({ txt,inverted}) => {
+  const modeTxt = txt.toLowerCase();
+  console.log("modeTxt:", modeTxt);
 
-  const {mode,setMode} = useContext(MyContext);
+  const handleMode = () => {
+    setLoad(true);
+    setTimeout(() => setLoad(false), 1000);
+    setMode(modeTxt);
+  };
 
-    const modeTxt = txt.toLowerCase();
-    console.log('modeTxt:',modeTxt);
+  if (inverted) {
+    return (
+      <div className='moon tilted' onClick={handleMode}>
+        <span
+          className='moontxt'
+          style={{ color: mode === modeTxt ? "white" : "" }}
+        >
+          {txt}
+        </span>
+        <div
+          className='moonShape'
+          style={{ backgroundColor: mode === modeTxt ? "white" : "" }}
+        ></div>
+      </div>
+    );
+  } else {
+    return (
+      <div className='moon' onClick={handleMode}>
+        <span
+          className='moontxt'
+          style={{ color: mode === modeTxt ? "white" : "" }}
+        >
+          {txt}
+        </span>
+        <div
+          className='moonShape'
+          style={{ backgroundColor: mode === modeTxt ? "white" : "" }}
+        ></div>
+      </div>
+    );
+  }
+};
 
-
-     if(inverted){
-          return (
-            <div className='moon tilted' onClick={() => setMode(modeTxt)}>
-              <span
-                className='moontxt'
-                style={{ color: mode === modeTxt ? "white" : "" }}
-              >
-                {txt}
-              </span>
-              <div
-                className='moonShape'
-                style={{ backgroundColor: mode === modeTxt ? "white" : "" }}
-              ></div>
-            </div>
-          );
-     }else{
-         return (
-           <div className='moon' onClick={() => setMode(modeTxt)}>
-             <span
-               className='moontxt'
-               style={{ color: mode === modeTxt ? "white" : "" }}
-             >
-               {txt}
-             </span>
-             <div
-               className='moonShape'
-               style={{ backgroundColor: mode === modeTxt ? "white" : "" }}
-             ></div>
-           </div>
-         ); 
-     }
-}
-
-export default Moon
+export default Moon;

@@ -8,47 +8,43 @@ import RoofImg from '../../assets/rooftopSectionImage.jpg'
 import HotelImg from '../../assets/hotelSectionImage.webp'
 
 const MenuPage = () => {
-  const {showMenu,setShowMenu} = useContext(MyContext);
+  const {showMenu,setShowMenu,setLoad} = useContext(MyContext);
   const navigate = useNavigate();
+
+  const loadPage = (page) => {
+    setLoad(true);
+    setTimeout(() => setLoad(false), 1000);
+    setShowMenu(!showMenu)
+    navigate(`/${page}`);
+  }
+
   return (
     <div className='menuPage'>
       <ul className='menuPageList'>
         <li
           className='menuPageLink'
-          onClick={() => {
-            setShowMenu(!showMenu);
-            navigate("/luce");
-          }}
+          onClick={()=> loadPage('luce')}
         >
           LUCE <span className='desc'>2ND FLOOR</span>
           <img src={LuceImg} alt='snapshot' className='linkImage' />
         </li>
         <li
           className='menuPageLink'
-          onClick={() => {
-            setShowMenu(!showMenu);
-            navigate("/acqua");
-          }}
+          onClick={()=>loadPage('acqua')}
         >
           ACQUA<span className='desc'>GROUND FLOOR</span>
           <img src={Img} alt='snapshot' className='linkImage' />
         </li>
         <li
           className='menuPageLink'
-          onClick={() => {
-            setShowMenu(!showMenu);
-            navigate("/rooftop");
-          }}
+          onClick={()=> loadPage('rooftop')}
         >
           ROOFTOP<span className='desc'>TOP FLOOR</span>
           <img src={RoofImg} alt='snapshot' className='linkImage' />
         </li>
         <li
           className='menuPageLink'
-          onClick={() => {
-            setShowMenu(!showMenu);
-            navigate("/hotel");
-          }}
+          onClick={()=> loadPage('hotel')}
         >
           HOTEL<span className='desc'>3RD FLOOR</span>
           <img src={HotelImg} alt='snapshot' className='linkImage' />
