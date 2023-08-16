@@ -8,14 +8,16 @@ import RoofImg from '../../assets/rooftopSectionImage.jpg'
 import HotelImg from '../../assets/hotelSectionImage.webp'
 
 const MenuPage = () => {
-  const {showMenu,setShowMenu,setLoad} = useContext(MyContext);
+  const {showMenu,setShowMenu,setMode,setLoad} = useContext(MyContext);
   const navigate = useNavigate();
 
   const loadPage = (page) => {
     setLoad(true);
+    setMode(page);
     setTimeout(() => setLoad(false), 1000);
     setShowMenu(!showMenu)
     navigate(`/${page}`);
+
   }
 
   return (

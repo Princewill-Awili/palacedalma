@@ -6,8 +6,7 @@ const Moon = ({ txt, inverted }) => {
   const { mode, setMode, setLoad } = useContext(MyContext);
 
   const modeTxt = txt.toLowerCase();
-  console.log("modeTxt:", modeTxt);
-
+  
   const handleMode = () => {
     setLoad(true);
     setTimeout(() => setLoad(false), 1000);
