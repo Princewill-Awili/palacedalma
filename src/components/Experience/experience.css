@@ -10,12 +10,15 @@
      width: 300vw;
      height: 100vh;
      display: flex;
-     background-image: url('/src/assets/acquacollectibles/poolwater.jpg');
+     
      background-size: cover;
      background-position: center;
      color: white;
      flex-direction: row;
      
+}
+.acquaBg{
+     background-image: url('/src/assets/acquacollectibles/poolwater.jpg');
 }
 
 .presents, .epilogue{
@@ -73,6 +76,60 @@
 }
 
 
+/*****************LSGALLERY***************************/
+.lsGallery{
+     width: 200vw;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     flex-direction: row;
+     
+     padding-left: 10px;
+     gap: 10px;
+     background-color: #313130;
+
+}
+
+.chapterPage{
+     width: 50vw;
+     height: 95%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color:#343433;
+     gap: 10vh;
+}
+
+.acquaChapter{
+     background-image: linear-gradient(to top right,pink,grey);
+}
+
+.cpTitle{
+     font-family: Dancing Script;
+     font-size: 3em;
+}
+
+.cpContent{
+     width: 80%;
+     text-align: center;
+     font-family: Satisfy;
+}
+
+.remarks{
+     font-family: Satisfy;
+}
+
+
+
+.lsImg{
+     width: 50vw;
+     height: 95%;
+
+}
+
+
 @keyframes rotateTxt {
      from{
           transform: rotateZ(0deg);
@@ -99,10 +156,47 @@
      .guide{
           width: 100px;
           height: 100px;
-          bottom: -10vh;
+          margin-bottom: 25vh;
      }
      .eye{
           font-size: 1.5em;
+     }
+}
+
+@media screen and (max-width:650px){
+     .landingSection{
+          width: 100vw;
+          height: 300vh;
+          flex-direction: column;
+     }
+
+     .lsGallery{
+          width: 100vw;
+          height: fit-content;
+          flex-direction: column;
+          background-color: black;
+          padding-top: 10vh;
+          padding-bottom: 10vh;
+          overflow: none;
+          justify-content: flex-start;
+     }
+
+     .lsImg{
+          width: 70vw;
+     }
+
+     .chapterPage{
+          width: 70vw;
+          height: 150vh;
+          padding-top: 10vh;
+          padding-bottom: 10vh;
+     }
+     .cpTitle{
+          font-size: 2em;
+     }
+     .cpContent{
+          font-size: 0.8em;
+          
      }
 }
 
