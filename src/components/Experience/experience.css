@@ -1,0 +1,116 @@
+.xperience{
+     height: 100vh;
+     width: fit-content;
+     display: flex;
+     z-index: 10000;
+     background-color: white;
+}
+
+.landingSection{
+     width: 300vw;
+     height: 100vh;
+     display: flex;
+     background-image: url('/src/assets/acquacollectibles/poolwater.jpg');
+     background-size: cover;
+     background-position: center;
+     color: white;
+     flex-direction: row;
+     
+}
+
+.presents, .epilogue{
+     font-size: 0.9em;
+}
+
+.lsPageOne{
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     padding-top: 30vh;
+     gap: 5vh;
+}
+
+.lsTitle{
+     font-size: 4em;
+     font-family: Dancing Script;
+}
+
+.guide{
+     width: 150px;
+     height: 150px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     bottom: -5vh;
+}
+.eye{
+     position: absolute;
+     font-size: 3em;
+     font-weight: 200;
+     stroke-width: 0.1px;
+}
+.rotator{
+     width: 95%;
+     height: 95%;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     animation: rotateTxt 8s infinite linear;
+}
+
+.letter{
+     width: 10px;
+     height: 100%;
+     position: absolute;
+     left:calc(50% - 5px);
+     font-size: 0.7em;
+     font-weight: 200;
+}
+
+
+@keyframes rotateTxt {
+     from{
+          transform: rotateZ(0deg);
+     }
+     to{
+          transform: rotateZ(360deg);
+     }
+}
+
+
+@media screen and (max-width:750px) {
+     .lsTitle{
+          font-size: 3em;
+     }
+
+     .presents, .epilogue{
+          font-size: 0.7em;
+     }
+
+     .letter{
+          font-size: 0.7em;
+     }
+
+     .guide{
+          width: 100px;
+          height: 100px;
+          bottom: -10vh;
+     }
+     .eye{
+          font-size: 1.5em;
+     }
+}
+
+@media screen and (max-width:600px){
+     .lsTitle{
+          font-size: 2.5em;
+     }
+     .letter{
+          font-size: 0.5em;
+     }
+}

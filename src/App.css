@@ -18,3 +18,7 @@
     --menuFontBlack: #465957;
     --curvyFont: Dancing Script;
  }
+
+ .App{
+   height: 100vh;
+ }
