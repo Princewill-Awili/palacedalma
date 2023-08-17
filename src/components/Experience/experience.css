@@ -1,210 +1,221 @@
-.xperience{
-     height: 100vh;
-     width: fit-content;
-     display: flex;
-     z-index: 10000;
-     background-color: white;
+.xperience {
+  height: 100vh;
+  width: fit-content;
+  display: flex;
+  z-index: 10000;
+  background-color: white;
 }
 
-.landingSection{
-     width: 300vw;
-     height: 100vh;
-     display: flex;
-     
-     background-size: cover;
-     background-position: center;
-     color: white;
-     flex-direction: row;
-     
+.landingSection {
+  width: 300vw;
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  flex-direction: row;
 }
-.acquaBg{
-     background-image: url('/src/assets/acquacollectibles/poolwater.jpg');
+.acquaBg {
+  background-image: url("/src/assets/acquacollectibles/poolwater.jpg");
 }
-
-.presents, .epilogue{
-     font-size: 0.9em;
+.luceBg{
+     background-image: url("/src//assets/lucecollectibles/dish4.jpg");
 }
 
-.lsPageOne{
-     width: 100vw;
-     height: 100vh;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: flex-start;
-     padding-top: 30vh;
-     gap: 5vh;
+.roofBg{
+     background-image: url("/src/assets/roofcollectibles/roofBg.webp");
 }
 
-.lsTitle{
-     font-size: 4em;
-     font-family: Dancing Script;
+.hotelBg{
+     background-image: url("/src/assets/hotelSectionImage.webp");
 }
 
-.guide{
-     width: 150px;
-     height: 150px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: relative;
-     bottom: -5vh;
-}
-.eye{
-     position: absolute;
-     font-size: 3em;
-     font-weight: 200;
-     stroke-width: 0.1px;
-}
-.rotator{
-     width: 95%;
-     height: 95%;
-     position: relative;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     animation: rotateTxt 8s infinite linear;
+.presents,
+.epilogue {
+  font-size: 0.9em;
 }
 
-.letter{
-     width: 10px;
-     height: 100%;
-     position: absolute;
-     left:calc(50% - 5px);
-     font-size: 0.7em;
-     font-weight: 200;
+.lsPageOne {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 30vh;
+  gap: 5vh;
 }
 
+.lsTitle {
+  font-size: 4em;
+  font-family: Dancing Script;
+}
+
+.guide {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: -5vh;
+}
+.eye {
+  position: absolute;
+  font-size: 3em;
+  font-weight: 200;
+  stroke-width: 0.1px;
+}
+.rotator {
+  width: 95%;
+  height: 95%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotateTxt 8s infinite linear;
+}
+
+.letter {
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  left: calc(50% - 5px);
+  font-size: 0.7em;
+  font-weight: 200;
+}
 
 /*****************LSGALLERY***************************/
-.lsGallery{
-     width: 200vw;
-     height: 100vh;
-     display: flex;
-     align-items: center;
-     justify-content: space-evenly;
-     flex-direction: row;
-     
-     padding-left: 10px;
-     gap: 10px;
-     background-color: #313130;
+.lsGallery {
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
 
+  padding-left: 10px;
+  gap: 10px;
+  background-color: #313130;
 }
 
-.chapterPage{
-     width: 50vw;
-     height: 95%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     color:#343433;
-     gap: 10vh;
+.chapterPage {
+  width: 50vw;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #343433;
+  gap: 10vh;
 }
 
-.acquaChapter{
-     background-image: linear-gradient(to top right,pink,grey);
+.acquaChapter {
+  background-image: linear-gradient(to top right, pink, grey);
+}
+.luceChapter {
+  background-image: linear-gradient(to top right, #5E6E86, #C6A55D);
+  color: #DBD5CD;
+}
+.roofChapter {
+  background-image: linear-gradient(to right,#FFA769, #5E6E86);
+  color: white;
 }
 
-.cpTitle{
-     font-family: Dancing Script;
-     font-size: 3em;
+.cpTitle {
+  font-family: Dancing Script;
+  font-size: 3em;
 }
 
-.cpContent{
-     width: 80%;
-     text-align: center;
-     font-family: Satisfy;
+.cpContent {
+  width: 80%;
+  text-align: center;
+  font-family: Satisfy;
 }
 
-.remarks{
-     font-family: Satisfy;
+.remarks {
+  font-family: Satisfy;
 }
 
-
-
-.lsImg{
-     width: 50vw;
-     height: 95%;
-
+.lsImg {
+  width: 50vw;
+  height: 95%;
 }
-
 
 @keyframes rotateTxt {
-     from{
-          transform: rotateZ(0deg);
-     }
-     to{
-          transform: rotateZ(360deg);
-     }
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
+@media screen and (max-width: 750px) {
+  .lsTitle {
+    font-size: 3em;
+  }
 
-@media screen and (max-width:750px) {
-     .lsTitle{
-          font-size: 3em;
-     }
+  .presents,
+  .epilogue {
+    font-size: 0.7em;
+  }
 
-     .presents, .epilogue{
-          font-size: 0.7em;
-     }
+  .letter {
+    font-size: 0.7em;
+  }
 
-     .letter{
-          font-size: 0.7em;
-     }
-
-     .guide{
-          width: 100px;
-          height: 100px;
-          margin-bottom: 25vh;
-     }
-     .eye{
-          font-size: 1.5em;
-     }
+  .guide {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25vh;
+  }
+  .eye {
+    font-size: 1.5em;
+  }
 }
 
-@media screen and (max-width:650px){
-     .landingSection{
-          width: 100vw;
-          height: 300vh;
-          flex-direction: column;
-     }
+@media screen and (max-width: 650px) {
+  .landingSection {
+    width: 100vw;
+    height: 300vh;
+    flex-direction: column;
+  }
 
-     .lsGallery{
-          width: 100vw;
-          height: fit-content;
-          flex-direction: column;
-          background-color: black;
-          padding-top: 10vh;
-          padding-bottom: 10vh;
-          overflow: none;
-          justify-content: flex-start;
-     }
+  .lsGallery {
+    width: 100vw;
+    height: fit-content;
+    flex-direction: column;
+    background-color: black;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    overflow: none;
+    justify-content: flex-start;
+  }
 
-     .lsImg{
-          width: 70vw;
-     }
+  .lsImg {
+    width: 70vw;
+  }
 
-     .chapterPage{
-          width: 70vw;
-          height: 150vh;
-          padding-top: 10vh;
-          padding-bottom: 10vh;
-     }
-     .cpTitle{
-          font-size: 2em;
-     }
-     .cpContent{
-          font-size: 0.8em;
-          
-     }
+  .chapterPage {
+    width: 70vw;
+    height: 150vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .cpTitle {
+    font-size: 2em;
+  }
+  .cpContent {
+    font-size: 0.8em;
+  }
 }
 
-@media screen and (max-width:600px){
-     .lsTitle{
-          font-size: 2.5em;
-     }
-     .letter{
-          font-size: 0.5em;
-     }
+@media screen and (max-width: 600px) {
+  .lsTitle {
+    font-size: 2.5em;
+  }
+  .letter {
+    font-size: 0.5em;
+  }
 }

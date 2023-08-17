@@ -5,7 +5,7 @@ const AcquaX = () => {
   return (
     <div className='acquax'>
       <Experience
-        acqua
+        mode='acqua'
         landingTitle={"The Art of Dreaming"}
         epilogue={"A STORY TO LIVE IN YOUR OWN SKIN."}
         story={{
@@ -16,7 +16,6 @@ const AcquaX = () => {
       />
     </div>
   );
-  
-}
+};
 
 export default AcquaX;

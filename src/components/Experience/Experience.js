@@ -6,14 +6,39 @@ import spaImg1 from "../../assets/acquacollectibles/pool5.jpg";
 import spaImg2 from "../../assets/acquacollectibles/spatreat2.webp";
 import spaImg3 from "../../assets/acquacollectibles/pool3.jpg";
 
-const acquaArr = [spaImg1,spaImg2,spaImg3];
+import lImg1 from "../../assets/lucecollectibles/chef2.jpg"
+import lImg2 from "../../assets/lucecollectibles/dish3.jpg";
+import lImg3 from "../../assets/lucecollectibles/luce1.jpg";
+
+import rImg1 from "../../assets/roofcollectibles/rooftop.jpg"
+import rImg2 from "../../assets/roofcollectibles/roof3.jpg";
+import rImg3 from "../../assets/roofcollectibles/roof5.jpg";
+
+const acquaArr = [spaImg1, spaImg2, spaImg3];
+const luceArr = [lImg1,lImg2,lImg3];
+const rArr = [rImg1,rImg2,rImg3]
 
 console.log(textArr);
 
-const Experience = ({ landingTitle, epilogue, story, acqua }) => {
+const resolveBg = (mode = "default") => {
+
+  if(mode !== 'default'){
+    return `landingSection ${mode}Bg`;
+  }
+  return 'landingSection';
+};
+
+const resolveChapters = (mode = 'default')=>{
+  if(mode !== 'default'){
+    return `chapterPage ${mode}Chapter`
+  }
+  return 'chapterPage'
+}
+
+const Experience = ({ landingTitle, epilogue, story, mode }) => {
   return (
     <div className='xperience'>
-      <section className={acqua ? 'landingSection acquaBg' :'landingSection'}>
+      <section className={resolveBg(mode)}>
         <div className='lsPageOne'>
           <p className='presents'>PALACE D' ALMA PRESENTS</p>
           <h1 className='lsTitle'>{landingTitle}</h1>
@@ -37,14 +62,28 @@ const Experience = ({ landingTitle, epilogue, story, acqua }) => {
         </div>
 
         <div className='lsGallery'>
-          <div className={acqua ? "chapterPage acquaChapter" : "chapterPage"}>
+          <div className={resolveChapters(mode)}>
             <p className='cpTitle'>{story.title}</p>
             <p className='cpContent'>{story.content}</p>
             <p className='remarks'>You are Cherished - Palace D' Alma</p>
           </div>
-          {acqua && (
+          {mode === "acqua" && (
             <>
               {acquaArr.map((img, index) => (
+                <img key={index} src={img} alt='lsImg' className='lsImg' />
+              ))}
+            </>
+          )}
+          {mode === "luce" && (
+            <>
+              {luceArr.map((img, index) => (
+                <img key={index} src={img} alt='lsImg' className='lsImg' />
+              ))}
+            </>
+          )}
+          {mode === "roof" && (
+            <>
+              {rArr.map((img, index) => (
                 <img key={index} src={img} alt='lsImg' className='lsImg' />
               ))}
             </>
