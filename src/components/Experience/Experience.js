@@ -14,9 +14,15 @@ import rImg1 from "../../assets/roofcollectibles/rooftop.jpg"
 import rImg2 from "../../assets/roofcollectibles/roof3.jpg";
 import rImg3 from "../../assets/roofcollectibles/roof5.jpg";
 
+import hImg1 from "../../assets/hotelcollectibles/room3.jpg";
+import hImg2 from "../../assets/hotelcollectibles/bath.jpg";
+import hImg3 from "../../assets/hotelcollectibles/room4.jpg";
+
+
 const acquaArr = [spaImg1, spaImg2, spaImg3];
 const luceArr = [lImg1,lImg2,lImg3];
-const rArr = [rImg1,rImg2,rImg3]
+const rArr = [rImg1,rImg2,rImg3];
+const hArr = [hImg1,hImg2,hImg3]
 
 console.log(textArr);
 
@@ -88,8 +94,13 @@ const Experience = ({ landingTitle, epilogue, story, mode }) => {
               ))}
             </>
           )}
-          {}
-          {}
+          {mode === "hotel" && (
+            <>
+              {hArr.map((img, index) => (
+                <img key={index} src={img} alt='lsImg' className='lsImg' />
+              ))}
+            </>
+          )}
         </div>
       </section>
     </div>

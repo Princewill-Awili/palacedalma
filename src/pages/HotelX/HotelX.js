@@ -9,9 +9,9 @@ const HotelX = () => {
         landingTitle={"Midnight Dream"}
         epilogue={"A story to be lived with open eyes."}
         story={{
-          title: "Live the Moment",
+          title: "The Art of Hospitality",
           content:
-            "We love being around people and being inspired by life. We are immersed in the beauty of the Lagos Island Skyline, its splendor, the serene and breezy atmostphere . On our rooftop you will be greeted by the slow effect of the harbour of Eko Atlantic, its flow and reflow, the chatter, the laughter, the bubbly, and the slow flow of the sea of cheerful people ready to celebrate with selected drinks and preparations chosen by our chefs.",
+            "Its walls are carved into a noble palace of the late '700, but as soon as you pass the door you will feel in a building suspended between the past and the present. You will see the beauty entering through the windows and walls sparkle with light, with the colors of the faces painted by Apulian artists..",
         }}
       />
     </div>

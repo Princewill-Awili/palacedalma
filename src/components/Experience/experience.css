@@ -27,7 +27,7 @@
 }
 
 .hotelBg{
-     background-image: url("/src/assets/hotelSectionImage.webp");
+     background-image: url("/src/assets/hotelcollectibles/hotelBG.webp");
 }
 
 .presents,
@@ -120,6 +120,11 @@
 .roofChapter {
   background-image: linear-gradient(to right,#FFA769, #5E6E86);
   color: white;
+}
+
+.hotelChapter{
+     background-image: linear-gradient(to top right, #525C5A,#A2A39D);
+     color: white;
 }
 
 .cpTitle {
