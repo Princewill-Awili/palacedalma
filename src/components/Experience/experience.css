@@ -1,5 +1,5 @@
 .xperience {
-  height: 100vh;
+  height: fit-content;
   width: fit-content;
   display: flex;
   z-index: 10000;
@@ -87,7 +87,7 @@
 
 /*****************LSGALLERY***************************/
 .lsGallery {
-  width: 200vw;
+  width: fit-content;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -144,7 +144,8 @@
 
 .lsImg {
   width: 50vw;
-  height: 95%;
+  
+  object-fit:cover;
 }
 
 @keyframes rotateTxt {
@@ -192,19 +193,19 @@
     height: fit-content;
     flex-direction: column;
     background-color: black;
-    padding-top: 10vh;
+    padding-top: 10px;
     padding-bottom: 10vh;
     overflow: none;
     justify-content: flex-start;
   }
 
   .lsImg {
-    width: 70vw;
+    width: 100vw;
   }
 
   .chapterPage {
-    width: 70vw;
-    height: 150vh;
+    width: 100vw;
+    height: 100vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
   }

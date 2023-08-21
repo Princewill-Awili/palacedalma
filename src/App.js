@@ -19,6 +19,7 @@ function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [mode, setMode] = useState("home");
   const [load, setLoad] = useState(false);
+  const [exp, setExp] = useState(false);
 
   useEffect(() => {
     initialLoad();
@@ -38,7 +39,8 @@ function App() {
           mode,
           setMode,
           load,
-          setLoad
+          setLoad,
+          exp, setExp
         }}
       >
         <Navbar />

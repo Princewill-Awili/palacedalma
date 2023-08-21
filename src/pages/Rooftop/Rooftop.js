@@ -7,7 +7,7 @@ const Rooftop = () => {
   return (
     <div className='rooftop'>
       <Slider roof/>
-      <TextContent header={'Encounters at Sunset'} body={roofTxt} links={['ASK FOR INFO','START THE EXERIENCE']} footer={'Rooftop'}/>
+      <TextContent header={'Encounters at Sunset'} body={roofTxt} links={['ASK FOR INFO','START THE EXPERIENCE']} footer={'Rooftop'}/>
     </div>
   )
 }

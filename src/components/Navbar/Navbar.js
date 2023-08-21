@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
      const navigate = useNavigate();
-     const {setMode,showMenu, setShowMenu, setLoad} = useContext(MyContext);
+     const {setMode,showMenu, setShowMenu, setLoad,exp} = useContext(MyContext);
 
      const toggleMenu = () =>{
           setShowMenu(!showMenu)
@@ -24,8 +24,10 @@ const Navbar = () => {
       setTimeout(()=>{setLoad(false)},1000);
      }
 
+     
+
   return (
-    <div className={showMenu ? "navbar menuOpen" : "navbar"}>
+    <div className={showMenu  ? "navbar menuOpen" : "navbar"}>
       <h3 className='logo' onClick={goHome}>
         Palace D' Alma
       </h3>
