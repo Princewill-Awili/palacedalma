@@ -57,5 +57,31 @@ export const getDrinks = () => {
   return drinks;
   
 }
+ export const rooms = [
+   {
+     category: "Presidential Suite",
+     image:
+       "https://www.thetranshotel.com/images/editor/images/presidential2.jpg",
+   },
+   {
+     category: "Executive Suite",
+     image:
+       "https://dtla.intercontinental.com/wp-content/uploads/2016/12/InterContinental-LA-Downtown_Presidential_Suite_Living_Room_A7116_jpg.jpg",
+   },
+   {
+     category: "Double Suite",
+     image:
+       "https://d1dzqwexhp5ztx.cloudfront.net/imageRepo/5/0/94/472/31/IL263_Double_Suite_R.jpg",
+   },
+   {
+     category: "Single Room",
+     image:
+       "https://www.cvent.com/sites/default/files/styles/focus_scale_and_crop_800x450/public/image/2021-10/hotel%20room%20with%20beachfront%20view.jpg?h=662a4f7c&itok=7Laa3LkQ",
+   },
+ ];
 
+
+ export const dishes = [
+  
+ ]
 

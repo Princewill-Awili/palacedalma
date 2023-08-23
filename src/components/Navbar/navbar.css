@@ -66,6 +66,17 @@
   }
 }
 
+@media screen and (max-width:655px) {
+  .navbar{
+    background-color: #E9E6E2;
+    color: var(--menuFontBlack);
+  }
+
+  .menu{
+    border-left: 1px solid var(--menuFontBlack);
+  }
+}
+
 @media screen and (max-width: 600px) {
   .menuContainer {
     width: 30%;

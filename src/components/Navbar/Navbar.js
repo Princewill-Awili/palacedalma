@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
      const navigate = useNavigate();
-     const {setMode,showMenu, setShowMenu, setLoad,exp} = useContext(MyContext);
+     const {setMode,showMenu, setShowMenu, setLoad} = useContext(MyContext);
 
      const toggleMenu = () =>{
           setShowMenu(!showMenu)

@@ -69,6 +69,15 @@
     }
  }
 
+ @media screen and (max-width:655px) {
+    .moonShape{
+      background-color: var(--menuFontBlack);
+    }
+    .moonTxt{
+      color: var(--menuFontBlack);
+    }
+ }
+
  @media screen and (max-width:465px){
      .moonTxt{
           font-size:0.7em;
