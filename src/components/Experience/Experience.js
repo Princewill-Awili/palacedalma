@@ -6,40 +6,39 @@ import spaImg1 from "../../assets/acquacollectibles/pool5.jpg";
 import spaImg2 from "../../assets/acquacollectibles/spatreat2.webp";
 import spaImg3 from "../../assets/acquacollectibles/pool3.jpg";
 
-import lImg1 from "../../assets/lucecollectibles/chef2.jpg"
+import lImg1 from "../../assets/lucecollectibles/chef2.jpg";
 import lImg2 from "../../assets/lucecollectibles/dish3.jpg";
 import lImg3 from "../../assets/lucecollectibles/luce1.jpg";
 
-import rImg1 from "../../assets/roofcollectibles/rooftop.jpg"
+import rImg1 from "../../assets/roofcollectibles/rooftop.jpg";
 import rImg2 from "../../assets/roofcollectibles/roof3.jpg";
 import rImg3 from "../../assets/roofcollectibles/roof5.jpg";
 
 import hImg1 from "../../assets/hotelcollectibles/room3.jpg";
 import hImg2 from "../../assets/hotelcollectibles/bath.jpg";
 import hImg3 from "../../assets/hotelcollectibles/room4.jpg";
-
+import OrderSection from "../OrderSection/OrderSection";
 
 const acquaArr = [spaImg1, spaImg2, spaImg3];
-const luceArr = [lImg1,lImg2,lImg3];
-const rArr = [rImg1,rImg2,rImg3];
-const hArr = [hImg1,hImg2,hImg3]
+const luceArr = [lImg1, lImg2, lImg3];
+const rArr = [rImg1, rImg2, rImg3];
+const hArr = [hImg1, hImg2, hImg3];
 
 console.log(textArr);
 
 const resolveBg = (mode = "default") => {
-
-  if(mode !== 'default'){
+  if (mode !== "default") {
     return `landingSection ${mode}Bg`;
   }
-  return 'landingSection';
+  return "landingSection";
 };
 
-const resolveChapters = (mode = 'default')=>{
-  if(mode !== 'default'){
-    return `chapterPage ${mode}Chapter`
+const resolveChapters = (mode = "default") => {
+  if (mode !== "default") {
+    return `chapterPage ${mode}Chapter`;
   }
-  return 'chapterPage'
-}
+  return "chapterPage";
+};
 
 const Experience = ({ landingTitle, epilogue, story, mode }) => {
   return (
@@ -101,6 +100,7 @@ const Experience = ({ landingTitle, epilogue, story, mode }) => {
               ))}
             </>
           )}
+          <OrderSection mode={mode} />
         </div>
       </section>
     </div>

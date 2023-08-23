@@ -1,0 +1,49 @@
+.card{
+     width: 400px;
+     height: 400px;
+     display: flex;
+     flex-direction: column;
+     background-color: white;
+     justify-content: flex-start;
+     gap: 5%;
+     align-items: center;
+     padding-top: 20px;
+}
+
+.cardImg{
+     width: 90%;
+     height: 80%;
+}
+
+.cardTitle{
+     width: 90%;
+     height: 10%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.2em;
+     color: brown;
+     text-transform: uppercase;
+     align-items: center;
+     justify-content: center;
+}
+
+@media screen and (max-width:550px) {
+     .card{
+          width: 350px;
+          height: 350px;
+     }
+     .cardTitle{
+          font-size: 1em;
+     }
+}
+
+@media screen and (max-width:500px) {
+     .card{
+          width: 300px;
+          height: 300px;
+     }
+     .cardTitle{
+          font-size: 0.8em;
+     }
+}

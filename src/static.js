@@ -1,4 +1,4 @@
-
+import axios from "axios";
 
 export const bodyTxt =
   'It\'s not just another gourmet cuisine. We dont just use "recipes" to cook. In Luce restaurant we follow the heart that loves tradition and our mind, which loves creativity. Sit at the table and smack your lips, we have prepared something good for you.';
@@ -38,3 +38,24 @@ export const textArr = [
   "E",
   " ",
 ];
+
+
+export const getDrinks = () => {
+  let drinks = [];
+  for(let i=0; i<9; i++){
+    axios
+      .get("https://www.thecocktaildb.com/api/json/v1/1/random.php")
+      .then((res) => {
+        const drink = res.data.drinks[0];
+        drinks.push({
+          drinkName: drink.strDrink,
+          drinkImage: drink.strDrinkThumb,
+        });
+      });
+  }
+  console.log(drinks);
+  return drinks;
+  
+}
+
+

@@ -1,0 +1,52 @@
+.orderSection{
+     width: fit-content;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     margin-left: 10px;
+}
+
+.orderIntro{
+     width: 50vw;
+     height: 95vh;
+     background-color: #30302f;
+     color: white;
+}
+
+.offerings{
+     width: fit-content;
+     height: 100%;
+     margin-left: 10px;
+     margin-right: 10px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+}
+
+
+@media screen and (max-width: 650px) {
+     *{
+          margin-left: 0;
+     }
+     .orderSection{
+          flex-direction: column;
+          width: 100vw;
+          height: fit-content;
+     }
+     .orderIntro{
+          width: 100vw;
+          height: fit-content;
+     
+     }
+     .offerings{
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-top: 10px;
+          width: 100vw;
+          height: fit-content;
+          flex-direction: column;
+     }
+}

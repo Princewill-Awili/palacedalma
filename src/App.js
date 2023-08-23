@@ -30,6 +30,8 @@ function App() {
     setTimeout(() => setLoad(false), 3000);
   };
 
+  
+
   return (
     <div className='App'>
       <MyContext.Provider

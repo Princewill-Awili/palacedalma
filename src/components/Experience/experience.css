@@ -7,7 +7,7 @@
 }
 
 .landingSection {
-  width: 300vw;
+  width: fit-content;
   height: 100vh;
   display: flex;
   background-size: cover;
@@ -157,7 +157,8 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1120px) {
+ 
   .lsTitle {
     font-size: 3em;
   }
@@ -180,23 +181,26 @@
     font-size: 1.5em;
   }
 }
+@media screen and (max-width: 655px){
 
+}
 @media screen and (max-width: 650px) {
   .landingSection {
     width: 100vw;
-    height: 300vh;
+    height: fit-content;
     flex-direction: column;
   }
 
   .lsGallery {
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     flex-direction: column;
     background-color: black;
     padding-top: 10px;
     padding-bottom: 10vh;
-    overflow: none;
+    overflow: hidden;
     justify-content: flex-start;
+   
   }
 
   .lsImg {
@@ -205,7 +209,7 @@
 
   .chapterPage {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     padding-top: 10vh;
     padding-bottom: 10vh;
   }
