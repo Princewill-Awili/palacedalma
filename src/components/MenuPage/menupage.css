@@ -89,6 +89,7 @@
 
   .menuPage{
     top: 10vh;
+    height: calc(100vh - 12vh);
     width: 100%;
     padding-top: 10vh;
     border-bottom-left-radius: 15px;
