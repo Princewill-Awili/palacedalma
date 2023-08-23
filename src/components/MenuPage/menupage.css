@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-left: 2%;
+  z-index: 8888;
 }
 
 .menuPageList {
@@ -85,6 +86,15 @@
 }
 
 @media screen and (max-width:665px) {
+
+  .menuPage{
+    top: 10vh;
+    width: 100%;
+    padding-top: 10vh;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+  }
      .linkImage{
           width:40%;
           left: 40%;

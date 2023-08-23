@@ -12,7 +12,7 @@
 
 .menuOpen {
   background-color: var(--pageGrey);
-  color: black;
+  color: var(--menuFontBlack);
 }
 
 .logo {
@@ -66,14 +66,25 @@
   }
 }
 
-@media screen and (max-width:655px) {
-  .navbar{
-    background-color: #E9E6E2;
+@media screen and (max-width: 655px) {
+  .navbar {
+    background-color: #e9e6e2;
     color: var(--menuFontBlack);
+    border-radius: 15px;
+    height: 10vh;
+    top: 1vh;
+  }
+  .logo {
+    font-size: 1.5em;
   }
 
-  .menu{
+  .menu {
     border-left: 1px solid var(--menuFontBlack);
+  }
+
+  .menuOpen{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 }
 
