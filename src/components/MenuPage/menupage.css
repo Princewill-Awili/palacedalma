@@ -85,11 +85,11 @@
      }
 }
 
-@media screen and (max-width:665px) {
+@media screen and (max-width:655px) {
 
   .menuPage{
     top: 10vh;
-    height: calc(100vh - 12vh);
+    height: calc(100vh - 15vh);
     width: 100%;
     padding-top: 10vh;
     border-bottom-left-radius: 15px;

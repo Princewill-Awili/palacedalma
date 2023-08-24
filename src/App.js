@@ -21,6 +21,8 @@ function App() {
   const [load, setLoad] = useState(false);
   const [exp, setExp] = useState(false);
 
+  const [cart, setCart] = useState([]);
+
   useEffect(() => {
     initialLoad();
   }, []);
@@ -42,7 +44,8 @@ function App() {
           setMode,
           load,
           setLoad,
-          exp, setExp
+          exp, setExp,
+          cart,setCart
         }}
       >
         <Navbar />

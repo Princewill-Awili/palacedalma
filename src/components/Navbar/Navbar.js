@@ -2,13 +2,14 @@ import {useContext} from 'react'
 import { MyContext } from '../../App';
 import './navbar.css'
 import { HiOutlineMenuAlt4 as MenuIcon } from "react-icons/hi";
+import {FiShoppingBag as BagIcon} from "react-icons/fi"
 import {AiOutlineClose as CloseIcon} from 'react-icons/ai'
 import MenuPage from '../MenuPage/MenuPage';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
      const navigate = useNavigate();
-     const {setMode,showMenu, setShowMenu, setLoad} = useContext(MyContext);
+     const {setMode,showMenu, setShowMenu, setLoad,cart} = useContext(MyContext);
 
      const toggleMenu = () =>{
           setShowMenu(!showMenu)
@@ -32,7 +33,10 @@ const Navbar = () => {
         Palace D' Alma
       </h3>
       <div className='menuContainer'>
-        <p className='region'>NG</p>
+        <div className='region'>
+          <BagIcon className='bag'/>
+          <span className="numBubble">{cart.length}</span>
+        </div>
         <div className={showMenu ? "menu menuBorder" : "menu"}>
           <span className='MenuTxt' onClick={toggleMenu}>
             {showMenu ? 'Close' : 'Menu'}
