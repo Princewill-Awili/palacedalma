@@ -8,7 +8,7 @@ import RoofImg from '../../assets/rooftopSectionImage.jpg'
 import HotelImg from '../../assets/hotelSectionImage.webp'
 
 const MenuPage = () => {
-  const {showMenu,setShowMenu,setMode,setLoad} = useContext(MyContext);
+  const {showMenu,setShowMenu,setMode,setLoad, openCart} = useContext(MyContext);
   const navigate = useNavigate();
 
   const loadPage = (page) => {
@@ -22,36 +22,31 @@ const MenuPage = () => {
 
   return (
     <div className='menuPage'>
-      <ul className='menuPageList'>
-        <li
-          className='menuPageLink'
-          onClick={()=> loadPage('luce')}
-        >
-          LUCE <span className='desc'>2ND FLOOR</span>
-          <img src={LuceImg} alt='snapshot' className='linkImage' />
-        </li>
-        <li
-          className='menuPageLink'
-          onClick={()=>loadPage('acqua')}
-        >
-          ACQUA<span className='desc'>GROUND FLOOR</span>
-          <img src={Img} alt='snapshot' className='linkImage' />
-        </li>
-        <li
-          className='menuPageLink'
-          onClick={()=> loadPage('rooftop')}
-        >
-          ROOFTOP<span className='desc'>TOP FLOOR</span>
-          <img src={RoofImg} alt='snapshot' className='linkImage' />
-        </li>
-        <li
-          className='menuPageLink'
-          onClick={()=> loadPage('hotel')}
-        >
-          HOTEL<span className='desc'>3RD FLOOR</span>
-          <img src={HotelImg} alt='snapshot' className='linkImage' />
-        </li>
-      </ul>
+      {openCart ? (
+        <>
+          <p className="tier">ORDERS/BOOKINGS/RESERVATIONS</p>
+        </>
+      ) : (
+        <ul className='menuPageList'>
+          <li className='menuPageLink' onClick={() => loadPage("luce")}>
+            LUCE <span className='desc'>2ND FLOOR</span>
+            <img src={LuceImg} alt='snapshot' className='linkImage' />
+          </li>
+          <li className='menuPageLink' onClick={() => loadPage("acqua")}>
+            ACQUA<span className='desc'>GROUND FLOOR</span>
+            <img src={Img} alt='snapshot' className='linkImage' />
+          </li>
+          <li className='menuPageLink' onClick={() => loadPage("rooftop")}>
+            ROOFTOP<span className='desc'>TOP FLOOR</span>
+            <img src={RoofImg} alt='snapshot' className='linkImage' />
+          </li>
+          <li className='menuPageLink' onClick={() => loadPage("hotel")}>
+            HOTEL<span className='desc'>3RD FLOOR</span>
+            <img src={HotelImg} alt='snapshot' className='linkImage' />
+          </li>
+        </ul>
+      )}
+
       <div className='menuPageFooter'>
         <span className='tier'>
           ©PALACE D' ALMA 2023 By{" "}

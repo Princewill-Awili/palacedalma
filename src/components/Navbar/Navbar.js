@@ -9,10 +9,13 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
      const navigate = useNavigate();
-     const {setMode,showMenu, setShowMenu, setLoad,cart} = useContext(MyContext);
+     const {setMode,showMenu, setShowMenu, setLoad,cart,openCart, setOpenCart} = useContext(MyContext);
 
      const toggleMenu = () =>{
-          setShowMenu(!showMenu)
+      if(openCart){
+        setOpenCart(false);
+      }
+          setShowMenu(!showMenu);
      }
 
      const goHome = () => {
@@ -34,7 +37,13 @@ const Navbar = () => {
       </h3>
       <div className='menuContainer'>
         <div className='region'>
-          <BagIcon className='bag'/>
+          <BagIcon 
+            className='bag' 
+            onClick={()=>{
+              setOpenCart(true);
+              setShowMenu(true);
+            }}
+          />
           <span className="numBubble">{cart.length}</span>
         </div>
         <div className={showMenu ? "menu menuBorder" : "menu"}>

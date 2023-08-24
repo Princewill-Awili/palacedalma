@@ -22,6 +22,7 @@ function App() {
   const [exp, setExp] = useState(false);
 
   const [cart, setCart] = useState([]);
+  const [openCart, setOpenCart] = useState(false);
 
   useEffect(() => {
     initialLoad();
@@ -31,8 +32,6 @@ function App() {
     setLoad(true);
     setTimeout(() => setLoad(false), 3000);
   };
-
-  
 
   return (
     <div className='App'>
@@ -44,23 +43,27 @@ function App() {
           setMode,
           load,
           setLoad,
-          exp, setExp,
-          cart,setCart
+          exp,
+          setExp,
+          cart,
+          setCart,
+          openCart,
+          setOpenCart,
         }}
       >
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<LandingPage />} />
-          <Route exact path='/home' element={<LandingPage />} />
-          <Route exact path='/acqua' element={<Acqua />} />
-          <Route exact path='/rooftop' element={<Rooftop />} />
-          <Route exact path='/luce' element={<Luce />} />
-          <Route exact path='/hotel' element={<Hotel />} />
-          <Route exact path='/acqua/experience' element={<AcquaX />} />
-          <Route exact path='/rooftop/experience' element={<RoofX />} />
-          <Route exact path='/luce/experience' element={<LuceX />} />
-          <Route exact path='/hotel/experience' element={<HotelX />} />
-          <Route exact path='/home/experience' element={<LandingPage />} />
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/home' element={<LandingPage />} />
+          <Route path='/acqua' element={<Acqua />} />
+          <Route path='/rooftop' element={<Rooftop />} />
+          <Route path='/luce' element={<Luce />} />
+          <Route path='/hotel' element={<Hotel />} />
+          <Route path='/acqua/experience' element={<AcquaX />} />
+          <Route path='/rooftop/experience' element={<RoofX />} />
+          <Route path='/luce/experience' element={<LuceX />} />
+          <Route path='/hotel/experience' element={<HotelX />} />
+          <Route path='/home/experience' element={<LandingPage />} />
         </Routes>
         {load && <Loader />}
       </MyContext.Provider>
