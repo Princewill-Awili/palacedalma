@@ -2,7 +2,7 @@ import "./card.css";
 import { useContext } from "react";
 import { MyContext } from "../../App";
 
-const Card = ({ src, title }) => {
+const Card = ({ src, title,obj }) => {
   const { mode } = useContext(MyContext);
 
   const resolveCardOptions = () => {
@@ -11,13 +11,17 @@ const Card = ({ src, title }) => {
     } else if (mode === "acqua") {
       return ["MAKE A RESERVATION", "INQUIRIES"];
     } else if (mode === "rooftop") {
-      return ["MAKE A RESERVATION"];
+      return ["MAKE A RESERVATION","ORDER A DRINK"];
     } else if (mode === "hotel") {
-      return ["BOOK A STAY"];
+      return ["BOOK A STAY", "INQUIRIES"];
     } else {
       return [];
     }
   };
+
+  const processOption =()=>{
+    console.log(obj)
+  }
 
   console.log("mode from card:",mode);
   return (
@@ -26,7 +30,7 @@ const Card = ({ src, title }) => {
       <p className='cardTitle'>{title}</p>
       <div className='cardVeil'>
         {resolveCardOptions().map((option, index) => (
-          <p className='cardOptions' key={index}>
+          <p className='cardOptions' key={index} onClick={processOption}>
             {option}
           </p>
         ))}

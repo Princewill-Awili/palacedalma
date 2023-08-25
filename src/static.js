@@ -55,30 +55,87 @@ export const getDrinks = () => {
 
   return drinks;
 };
-
-console.log(getDrinks);
 export const rooms = [
   {
-    category: "Presidential Suite",
-    image:
-      "https://www.thetranshotel.com/images/editor/images/presidential2.jpg",
-  },
-  {
-    category: "Executive Suite",
-    image:
-      "https://dtla.intercontinental.com/wp-content/uploads/2016/12/InterContinental-LA-Downtown_Presidential_Suite_Living_Room_A7116_jpg.jpg",
-  },
-  {
-    category: "Double Suite",
-    image:
-      "https://d1dzqwexhp5ztx.cloudfront.net/imageRepo/5/0/94/472/31/IL263_Double_Suite_R.jpg",
-  },
-  {
-    category: "Single Room",
     image:
       "https://www.cvent.com/sites/default/files/styles/focus_scale_and_crop_800x450/public/image/2021-10/hotel%20room%20with%20beachfront%20view.jpg?h=662a4f7c&itok=7Laa3LkQ",
+    category: "Standard Room",
+    noOfBeds: 1,
+    bedSize: 140,
+    tvSize: 40,
+    roomService: true,
+    description:
+      "Enjoy your stay in our cozy Standard Room, perfect for solo travelers or couples. Unwind in a comfortable queen-sized bed, watch your favorite shows on a 40-inch TV, and take advantage of our room service for a delightful stay. This room is designed to provide all the essentials for a relaxing experience.",
+    price: 100.0,
+    seaView: false,
+    sauna: false,
+    complimentaryMeal: false,
+  },
+  {
+    image:
+      "https://www.thetranshotel.com/images/editor/images/presidential2.jpg",
+    category: "Presidential Suite",
+    noOfBeds: 2,
+    bedSize: 180,
+    tvSize: 55,
+    roomService: true,
+    description:
+      "Indulge in luxury with our Presidential Suite, offering a spacious and elegant living space. The suite features two comfortable king-sized beds, a 55-inch TV for entertainment, and the convenience of room service. Whether you're traveling for business or leisure, this suite promises a lavish experience with a touch of sophistication.",
+    price: 250.75,
+    seaView: false,
+    sauna: true,
+    complimentaryMeal: true,
+  },
+  {
+    image:
+      "https://www.lujurevillas.com/2015/photos/Bedroom-cropped_REV_23.jpg",
+    category: "Premium Villa",
+    noOfBeds: 3,
+    bedSize: 200,
+    tvSize: 65,
+    roomService: true,
+    description:
+      "Experience unparalleled luxury in our Premium Villa, a private oasis nestled within our resort. This spacious villa features three large beds, a sprawling 65-inch TV, and top-notch room service. Enjoy breathtaking sea views and the tropical rain forest behind, right from your villa and unwind in your private sauna after a day of exploration. This is the ultimate escape for those seeking the best of both worlds.",
+    price: 500.0,
+    seaView: true,
+    sauna: true,
+    complimentaryMeal: false,
+  },
+  {
+    image:
+      "https://dtla.intercontinental.com/wp-content/uploads/2016/12/InterContinental-LA-Downtown_Presidential_Suite_Living_Room_A7116_jpg.jpg",
+    category: "Executive Suite",
+    noOfBeds: 1,
+    bedSize: 160,
+    tvSize: 50,
+    roomService: true,
+    description:
+      "Elevate your stay in our Executive Suite, a harmonious blend of comfort and sophistication. This suite features a plush queen-sized bed, a 50-inch TV, and prompt room service. Immerse yourself in the serene sea views right from your suite and rejuvenate in our sauna facilities. With thoughtful amenities and an elegant atmosphere, this suite is designed for discerning travelers.",
+    price: 350.5,
+    seaView: true,
+    sauna: false,
+    complimentaryMeal: true,
+  },
+  {
+    image:
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/200745634.jpg?k=6c0c0e87d1d06c94f0ab6b44c805abd52a869fafb1c2ef30fc5458f27d2fad15&o=&hp=1",
+    category: "Family Room",
+    noOfBeds: 2,
+    bedSize: 120,
+    tvSize: 50,
+    roomService: true,
+    description:
+      "Create lasting memories in our Family Room, a spacious haven for your loved ones. With four cozy beds, a 50-inch TV, and convenient room service, this room is perfect for families. Unwind after a day of adventure and take in the captivating resort views. Plus, enjoy complimentary meals that cater to both kids and adults, making your family vacation truly special.",
+    price: 180.25,
+    seaView: false,
+    sauna: false,
+    complimentaryMeal: true,
   },
 ];
+
+console.log(rooms);
+
+
 
 export const dishes = [
   {

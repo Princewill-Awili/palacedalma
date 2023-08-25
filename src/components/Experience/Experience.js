@@ -24,8 +24,6 @@ const luceArr = [lImg1, lImg2, lImg3];
 const rArr = [rImg1, rImg2, rImg3];
 const hArr = [hImg1, hImg2, hImg3];
 
-console.log(textArr);
-
 const resolveBg = (mode = "default") => {
   if (mode !== "default") {
     return `landingSection ${mode}Bg`;

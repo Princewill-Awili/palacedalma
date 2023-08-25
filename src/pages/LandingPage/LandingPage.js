@@ -68,8 +68,8 @@ const LandingPage = () => {
           <LinkList
             title='CONTACTS'
             items={[
-              "108A, Muiz Banire Close",
-              "Lekki Phase 1, Lekki",
+              "108A, Landmark Beach Resort",
+              "1023 ,Lekki Peninsula, Lekki, Lagos",
               "(+234) 01 23 5432",
             ]}
           />

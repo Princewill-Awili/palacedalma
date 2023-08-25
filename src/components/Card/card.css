@@ -9,11 +9,15 @@
   align-items: center;
   padding-top: 20px;
   position: relative;
+  
 }
 
-.cardInMotion{
-     animation: cardHover 2s linear infinite;
+.card:hover{
+     animation: cardHover 1s ease;
+     z-index: 20000;
 }
+
+
 
 .cardImg {
   width: 90%;
@@ -75,11 +79,15 @@
 
 @keyframes cardHover {
      0%{
-          transform: translateX(0px);
+          left:0px;
+          top: 0px;
+          transform: rotateZ(0deg) ;
 
      }
      100%{
-          transform: translateX(20px)
+          left:30px;
+          top:30px;
+          transform: rotateZ(15deg) ;
      }
 }
 

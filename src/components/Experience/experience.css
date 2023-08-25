@@ -4,6 +4,19 @@
   display: flex;
   z-index: 10000;
   background-color: white;
+  overflow: auto;
+}
+.xperience::-webkit-scrollbar{
+  scrollbar-width: none;
+  width: 0.1em;
+}
+
+.xperience::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+.xperience::-webkit-scrollbar-thumb{
+  background-color: transparent;
 }
 
 .landingSection {

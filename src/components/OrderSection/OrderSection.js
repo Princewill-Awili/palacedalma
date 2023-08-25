@@ -75,6 +75,7 @@ const OrderSection = ({ mode }) => {
                 key={index}
                 src={drink.drinkImage}
                 title={drink.drinkName}
+                obj={drink}
               />
             ))}
           </>
@@ -82,21 +83,21 @@ const OrderSection = ({ mode }) => {
         {mode === "hotel" && (
           <>
             {rooms.map((room, index) => (
-              <Card key={index} src={room.image} title={room.category} />
+              <Card key={index} src={room.image} title={room.category} obj={room} />
             ))}
           </>
         )}
         {mode === "luce" && (
           <>
             {dishes.map((dish, index) => (
-              <Card key={index} src={dish.image} title={dish.name} />
+              <Card key={index} src={dish.image} title={dish.name} obj={dish} />
             ))}
           </>
         )}
         {mode === "acqua" && (
           <>
             {spaServices.map((service, index) => (
-              <Card key={index} src={service.image} title={service.name} />
+              <Card key={index} src={service.image} title={service.name} obj={service} />
             ))}
           </>
         )}
